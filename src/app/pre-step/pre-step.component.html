@@ -1,0 +1,151 @@
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-md-5 layer p-5">
+      <div class="right-side">
+        <p>
+          <i class="fa-solid fa-bullhorn"></i
+          ><span class="me-2">تهيئه الحملات الاعلانيه</span>
+        </p>
+        <div class="mt-5">
+          <h2>
+            مرحبًا بك في منصة أختيار عقارات <br />
+            سكنية للتعمير
+          </h2>
+          <h3>
+            قم بإضافة عملائك الحاليين إلي نظامك الجديد<br />
+            لتبدأ التجربة""قم بإضافة عملائك الحاليين إلي<br />
+            نظامك الجديد لتبدأ التجربة"
+          </h3>
+        </div>
+        <div class="mt-5">
+          <h4>
+            <span><i class="fa-solid fa-check"></i></span> قم بتحميل شعارك
+            وتفاصيل علامتك التجارية
+          </h4>
+          <h4>
+            <span><i class="fa-solid fa-check"></i></span> اختر وخصص الحقول التي
+            تحتاجها
+          </h4>
+          <h4>
+            <span><i class="fa-solid fa-check"></i></span> اختر موضوعاً وصمم
+            مظهر استمارتك
+          </h4>
+          <h4>
+            <span><i class="fa-solid fa-check"></i></span> ضبط رسالة شكر
+            وإجراءات المتابعة
+          </h4>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-7 p-5">
+      <div class="left-side">
+        <div class="left-head-line">
+          <h3>طريقة بناء الحملة الخاصة بك</h3>
+          <p>الطريقة المختارة لطريقة إنشاء رسالة الحملة</p>
+        </div>
+
+        <button
+          [ngStyle]="{
+            'border-color': selection === 1 ? '#4F9FFD' : '#ECECEC'
+          }"
+          (click)="selectCamp(1)"
+          class="manual btn w-100 p-2 mt-3"
+        >
+          <div class="selection-indicator">
+            <span *ngIf="selection !== 1" class="notSelected">
+              <svg
+                width="16"
+                height="16"
+                viewBox="0 0 16 16"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <circle cx="8" cy="8" r="8" fill="#F0F0F0" />
+              </svg>
+            </span>
+            <span *ngIf="selection === 1" class="selected">
+              <svg
+                width="16"
+                height="16"
+                viewBox="0 0 16 16"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M8 16C10.1217 16 12.1566 15.1571 13.6569 13.6569C15.1571 12.1566 16 10.1217 16 8C16 5.87827 15.1571 3.84344 13.6569 2.34315C12.1566 0.842855 10.1217 0 8 0C5.87827 0 3.84344 0.842855 2.34315 2.34315C0.842855 3.84344 0 5.87827 0 8C0 10.1217 0.842855 12.1566 2.34315 13.6569C3.84344 15.1571 5.87827 16 8 16ZM11.5312 6.53125L7.53125 10.5312C7.2375 10.825 6.7625 10.825 6.47188 10.5312L4.47188 8.53125C4.17813 8.2375 4.17813 7.7625 4.47188 7.47188C4.76562 7.18125 5.24062 7.17813 5.53125 7.47188L7 8.94063L10.4688 5.46875C10.7625 5.175 11.2375 5.175 11.5281 5.46875C11.8187 5.7625 11.8219 6.2375 11.5281 6.52812L11.5312 6.53125Z"
+                  fill="#3E97FF"
+                />
+              </svg>
+            </span>
+            <i class="fa-solid fa-file-pen"></i>
+          </div>
+          <h5>إنشاء يدوي</h5>
+          <p>قم بإنشاء رسالة طلب سكنك بشكل يدوي ودقيق. اختر كلماتك بعناية</p>
+        </button>
+
+        <button
+          [ngStyle]="{
+            'border-color': selection === 2 ? '#4F9FFD' : '#ECECEC'
+          }"
+          (click)="selectCamp(2)"
+          class="ai btn w-100 p-2 mt-3"
+        >
+          <div class="selection-indicator">
+            <span *ngIf="selection !== 2" class="notSelected">
+              <svg
+                width="16"
+                height="16"
+                viewBox="0 0 16 16"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <circle cx="8" cy="8" r="8" fill="#F0F0F0" />
+              </svg>
+            </span>
+            <span *ngIf="selection === 2" class="selected">
+              <svg
+                width="16"
+                height="16"
+                viewBox="0 0 16 16"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M8 16C10.1217 16 12.1566 15.1571 13.6569 13.6569C15.1571 12.1566 16 10.1217 16 8C16 5.87827 15.1571 3.84344 13.6569 2.34315C12.1566 0.842855 10.1217 0 8 0C5.87827 0 3.84344 0.842855 2.34315 2.34315C0.842855 3.84344 0 5.87827 0 8C0 10.1217 0.842855 12.1566 2.34315 13.6569C3.84344 15.1571 5.87827 16 8 16ZM11.5312 6.53125L7.53125 10.5312C7.2375 10.825 6.7625 10.825 6.47188 10.5312L4.47188 8.53125C4.17813 8.2375 4.17813 7.7625 4.47188 7.47188C4.76562 7.18125 5.24062 7.17813 5.53125 7.47188L7 8.94063L10.4688 5.46875C10.7625 5.175 11.2375 5.175 11.5281 5.46875C11.8187 5.7625 11.8219 6.2375 11.5281 6.52812L11.5312 6.53125Z"
+                  fill="#3E97FF"
+                />
+              </svg>
+            </span>
+            <img src="../../assets/ai_5278402.png" alt="" />
+          </div>
+          <h5 class="mt-1">إنشاء عبر الذكاء الأصطناعي</h5>
+          <p>قم بإنشاء رسالة طلب سكنك بشكل يدوي ودقيق. اختر كلماتك بعناية،</p>
+        </button>
+
+        <div *ngIf="selection !== 0" class="choose mt-3">
+          <h5>قم بتسمية مشروع أختيار</h5>
+          <p>أسم مشروعك يجب ان يكون مميز وواضح</p>
+          <div>
+            <input
+              type="email"
+              class="form-control p-2"
+              id="exampleFormControlInput1"
+              placeholder="اسم مشروع مقترح"
+            />
+          </div>
+        </div>
+        <div class="d-flex">
+          <button
+            (click)="goToNextStep()"
+            [disabled]="selection === 0"
+            type="button"
+            class="btn btn-primary mt-4 px-5 me-auto"
+          >
+            ابدا الان
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <i class="fa-solid fa-xmark"></i>
+</div>

@@ -1,0 +1,22 @@
+<app-pre-step
+  *ngIf="tab === 1"
+  (nextStep)="goToNextStep($event)"
+></app-pre-step>
+<app-selection
+  [tab]="tab"
+  (nextStep)="goToNextStep($event)"
+  (back)="backStep($event)"
+  *ngIf="tab === 2 || tab === 3"
+></app-selection>
+<app-prob
+  [tab]="tab"
+  (nextStep)="goToNextStep($event)"
+  (back)="backStep($event)"
+  *ngIf="tab === 4 || tab === 5"
+></app-prob>
+<app-submission
+  [tab]="tab"
+  (nextStep)="goToNextStep($event)"
+  (back)="backStep($event)"
+  *ngIf="tab === 6 || tab === 7"
+></app-submission>

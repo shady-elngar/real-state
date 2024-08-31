@@ -1,0 +1,208 @@
+.group span {
+    width: 100% !important;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+@media (max-width: 576px) {
+    .group span {
+        visibility: hidden;
+    }
+    body {
+        overflow-x: hidden !important;
+    }
+    .custome {
+        visibility: hidden;
+    }
+}
+
+.group {
+    position: relative !important;
+    visibility: visible !important;
+    border: 0.75px solid #d3d6dc !important;
+    border-radius: 5px;
+}
+
+.group textarea {
+    border: none !important;
+    height: 200px !important;
+}
+
+.group textarea:focus {
+    outline: none !important;
+}
+
+.input-group-text i {
+    font-size: 20px;
+}
+
+h3 {
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 21px;
+    color: #000000;
+}
+
+p {
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 15.55px;
+    color: #6b7280;
+}
+
+.custome {
+    position: absolute;
+    bottom: 90%;
+    left: 2%;
+    z-index: -3;
+    font-size: 220px;
+    color: rgb(175, 218, 255);
+    opacity: 0.3;
+}
+
+.fa-xmark {
+    transition: all 0.5s;
+    background-color: beige;
+    padding: 3px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.fa-xmark:hover {
+    color: red;
+}
+
+span {
+    cursor: pointer;
+}
+
+.arrow {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.progress {
+    width: 100%;
+    height: 5px;
+    color: blue;
+}
+
+.progress-bar {
+    position: relative;
+    width: 50%;
+    height: 5px;
+    background-color: blue;
+}
+
+.input-group-text {
+    display: flex !important;
+    flex-direction: column;
+    align-items: start;
+}
+
+@media (max-width: 576px) {
+    body {
+        overflow-x: hidden !important;
+    }
+    .custome {
+        visibility: hidden;
+    }
+}
+
+body {
+    overflow-x: hidden;
+}
+
+.group {
+    position: relative !important;
+    visibility: visible !important;
+    border: 0.75px solid #d3d6dc !important;
+    border-radius: 5px;
+}
+
+.group textarea {
+    border: none !important;
+    height: 200px !important;
+}
+
+.group textarea:focus {
+    outline: none !important;
+}
+
+h3 {
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 21px;
+    color: #000000;
+}
+
+p {
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 15.55px;
+    color: #6b7280;
+}
+
+.fa-xmark {
+    transition: all 0.5s;
+    background-color: beige;
+    padding: 3px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.fa-xmark:hover {
+    color: red;
+}
+
+.arrow {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.progress {
+    width: 100%;
+    height: 5px;
+    color: blue;
+}
+
+.progress-bar {
+    position: relative;
+    width: 50%;
+    height: 5px;
+    background-color: blue;
+}
+
+.cursor {
+    cursor: pointer;
+}
+
+.radio-bar {
+    display: flex;
+    gap: 10px;
+}
+
+.box {
+    border: 0.5px solid #dee2e6;
+    border-radius: 10px;
+    box-shadow: 3px 3px 5px 0px rgba(0, 0, 0, 0.75);
+}
+
+.parent {
+    position: relative;
+    z-index: 55 !important;
+}
+
+.custome {
+    position: absolute;
+    bottom: 30%;
+    left: 3%;
+    z-index: -100 !important;
+    font-size: 150px;
+    color: rgb(175, 218, 255);
+    opacity: 0.3;
+}

@@ -1,0 +1,185 @@
+<!-- selection first step -->
+<ng-container *ngIf="tab === 2">
+  <div class="container-fluid mt-5">
+    <div class="row">
+      <div class="col-md-12">
+        <div class="head-line text-center mb-5">
+          <h2>أختر المكان المفضل لسكنك</h2>
+          <p>قم بأختيار مصدر شقك الأسكانية كل تستكمل باقي الخطوات</p>
+        </div>
+      </div>
+      <div class="col-md-2"></div>
+
+      <div class="col text-center offset-sm-0">
+        <div class="cairo country">
+          <div class="icon cairo-ic">
+            <i class="fa-solid fa-house"></i>
+          </div>
+          <h3>القاهره</h3>
+          <input
+            class="form-check-input"
+            type="radio"
+            name="location"
+            id="flexCheckCairo"
+            [(ngModel)]="selection"
+            value="cairo"
+          />
+        </div>
+      </div>
+
+      <div class="col offset-sm-0 text-center">
+        <div class="sahel country">
+          <div class="icon sahel-ic">
+            <i class="fa-solid fa-truck-fast"></i>
+          </div>
+          <h3>الساحل الشمالي</h3>
+          <input
+            class="form-check-input"
+            type="radio"
+            name="location"
+            [(ngModel)]="selection"
+            id="flexCheckSahel"
+            value="sahel"
+          />
+        </div>
+      </div>
+
+      <div class="col offset-sm-0 offset-md-2 text-center">
+        <div class="dahb country">
+          <div class="icon dahb-ic">
+            <i class="fa-solid fa-user-group"></i>
+          </div>
+          <h3>دهب</h3>
+          <input
+            name="location"
+            class="form-check-input"
+            type="radio"
+            [(ngModel)]="selection"
+            id="flexCheckDahb"
+            value="dahab"
+          />
+        </div>
+      </div>
+    </div>
+    <div class="row mt-4">
+      <div class="col-md12 text-center mt-5">
+        <button
+          (click)="goToNextStep(2)"
+          type="button"
+          [disabled]="!selection"
+          class="btn btn-primary mt-4 px-5"
+        >
+          <i class="fa-solid fa-circle-chevron-right"></i> أبدأ الأن
+        </button>
+      </div>
+      <div class="col-md-12 text-center mt-5">
+        <div class="footer-note">
+          <p>نحن هنا لمساعدتك في أختيار منزلك بسهولة وعناية</p>
+          <p>
+            قم بالضغط على زر "بدء" للبدء في العملية، واتبع التوجيهات لإدخال
+            معلومات الحملة
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="progress fixed-bottom">
+    <div class="progress-bar"></div>
+  </div>
+  <i class="fa-solid fa-xmark"></i>
+  <span (click)="backStep(2)"
+    ><i class="fa-solid fa-arrow-right-long"></i>العوده</span
+  >
+</ng-container>
+
+<!-- selection next step  -->
+<ng-container *ngIf="tab === 3">
+  <div class="container-fluid mt-5">
+    <div class="row">
+      <div class="col-md-12">
+        <div class="head-line text-center mb-5">
+          <h2>أختر نوع المنزل</h2>
+          <p>قم بأختيار مصدر شقك الأسكانية لكي تستكمل باقي الخطوات</p>
+        </div>
+      </div>
+      <div class="col-md-2"></div>
+      <div class="col text-center offset-sm-0">
+        <div class="villa builed">
+          <div class="icon villa-ic">
+            <i class="fa-solid fa-film"></i>
+          </div>
+          <h3>فيلا</h3>
+          <input
+            class="form-check-input"
+            type="radio"
+            value="villa"
+            id="flexCheckvilla"
+            name="villa"
+            [(ngModel)]="secondSelection"
+          />
+        </div>
+      </div>
+      <div class="col offset-sm-0 text-center">
+        <div class="dublex builed">
+          <div class="icon dublex-ic">
+            <i class="fa-solid fa-building-wheat"></i>
+          </div>
+
+          <h3>شقة دوبليكس</h3>
+          <input
+            class="form-check-input"
+            type="radio"
+            value="dublex"
+            id="flexCheckdublex"
+            name="dublex"
+            [(ngModel)]="secondSelection"
+          />
+        </div>
+      </div>
+      <div class="col offset-sm-0 offset-md-2 text-center">
+        <div class="flat builed">
+          <div class="icon flat-ic">
+            <i class="fa-solid fa-building-wheat"></i>
+          </div>
+          <h3>شقة سكنية</h3>
+          <input
+            class="form-check-input"
+            type="radio"
+            value="aprtement"
+            id="flexCheckaprtement"
+            name="aprtement"
+            [(ngModel)]="secondSelection"
+          />
+        </div>
+      </div>
+    </div>
+    <div class="row mt-4">
+      <div class="col-md12 text-center mt-5">
+        <button
+          (click)="goToNextStep(3)"
+          type="button"
+          [disabled]="!secondSelection"
+          class="btn btn-primary mt-4 px-5"
+        >
+          التالي
+        </button>
+      </div>
+      <div class="col-md-12 text-center mt-5">
+        <div class="footer-note">
+          <p>نحن هنا لمساعدتك في أختيار منزلك بسهولة وعناية</p>
+          <p>
+            قم بالضغط على زر "بدء" للبدء في العملية، واتبع التوجيهات لإدخال
+            معلومات الحملة
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="progress fixed-bottom">
+    <div class="progress-bar"></div>
+  </div>
+  <i class="fa-solid fa-xmark"></i>
+  <span (click)="backStep(3)"
+    ><i class="fa-solid fa-arrow-right-long"></i>العوده</span
+  >
+</ng-container>

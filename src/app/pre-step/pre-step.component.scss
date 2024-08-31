@@ -1,0 +1,180 @@
+$color_1: #83899f;
+$color_2: rgb(187, 187, 38);
+$color_3: #183b56;
+$color_4: #464e5f;
+$color_5: blue;
+$color_6: #2e2e2e;
+$color_7: #8e8e93;
+$color_8: #2d77cc;
+$color_9: red;
+$background-color_1: #56a4ff33;
+$background-color_2: beige;
+.right-side {
+    span {
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 16.74px;
+        color: $color_1;
+        // text-align: right;
+    }
+    p {
+        i {
+            color: $color_2;
+            font-size: 18px;
+            rotate: -30deg;
+        }
+    }
+    h2 {
+        font-size: 24px;
+        font-weight: 500;
+        line-height: 28.8px;
+        color: $color_3;
+    }
+    h3 {
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 20px;
+        color: $color_1;
+    }
+    h4 {
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 16.74px;
+        color: $color_4;
+        margin-bottom: 16px;
+        display: flex;
+        align-items: center;
+        gap: 16px;
+        span {
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border: 0.5px solid #0977f833;
+            width: 26px;
+            height: 26px;
+            color: $color_5;
+            background-color: $background-color_1;
+        }
+    }
+}
+
+.layer {
+    background-image: url(../../assets/5e44500c3c9e1d685a6706b0b23e8ec3.png);
+    background-size: cover;
+    background-position: center center;
+}
+
+.ai {
+    img {
+        width: 22px;
+    }
+}
+
+.left-side {
+    .manual {
+        position: relative;
+        border: 0.75px solid #56a4ff33;
+        border-radius: 10px;
+        cursor: pointer;
+        transition: all 0.5s;
+        .selection-indicator {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            flex-direction: row-reverse;
+        }
+        h5 {
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 19.2px;
+            text-align: right;
+            color: $color_6;
+        }
+        p {
+            font-size: 14px;
+            font-weight: 400;
+            line-height: 16.74px;
+            text-align: right;
+            color: $color_7;
+        }
+        i {
+            color: $color_8;
+        }
+    }
+    .ai {
+        position: relative;
+        border: 0.75px solid #56a4ff33;
+        border-radius: 10px;
+        cursor: pointer;
+        transition: all 0.5s;
+        .selection-indicator {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            flex-direction: row-reverse;
+        }
+        h5 {
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 19.2px;
+            text-align: right;
+            color: $color_6;
+        }
+        p {
+            font-size: 14px;
+            font-weight: 400;
+            line-height: 16.74px;
+            text-align: right;
+            color: $color_7;
+        }
+    }
+    .left-head-line {
+        h3 {
+            font-size: 20px;
+            font-weight: 500;
+            line-height: 24px;
+            text-align: right;
+        }
+        p {
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 20px;
+            text-align: right;
+            color: $color_1;
+        }
+    }
+    .choose {
+        h5 {
+            font-size: 20px;
+            font-weight: 500;
+            line-height: 24px;
+            text-align: right;
+            color: $color_3;
+        }
+        p {
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 20px;
+            text-align: right;
+            color: $color_1;
+        }
+    }
+}
+
+.container-fluid {
+    .fa-xmark {
+        position: absolute;
+        top: 5%;
+        left: 3%;
+        padding: 4px;
+        background-color: $background-color_2;
+        border-radius: 10px;
+        cursor: pointer;
+        transition: all 0.5s;
+        &:hover {
+            color: $color_9;
+        }
+    }
+    position: relative;
+}

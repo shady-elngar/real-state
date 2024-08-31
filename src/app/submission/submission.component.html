@@ -1,0 +1,60 @@
+<!-- sub fisrt step -->
+<ng-container *ngIf="tab === 6">
+  <div class="container p-4 mt-3">
+    <div class="row py-4">
+      <div class="col-md-12">
+        <div class="head-line text-center">
+          <h4>جاري إرسال رسالتك الأسكانية</h4>
+          <p>الرجاء الأنتظار بعض الدقائق فقط</p>
+        </div>
+      </div>
+      <div class="col-md-12 mt-5 mb-5 text-center">
+        <div class="icon-out">
+          <i class="fa-solid fa-paper-plane"></i>
+        </div>
+      </div>
+      <div class="col-md-12 mt-5">
+        <div class="steps">
+          <div>
+            <h6>جاري الارسال</h6>
+          </div>
+          <div>
+            <span>{{count}}/100</span>
+          </div>
+        </div>
+        <div class="progress">
+          <div [style.width]="count + '%'" class="progress-bar"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <i class="fa-solid fa-xmark"></i>
+</ng-container>
+
+<!-- sub second step -->
+<ng-container *ngIf="tab === 7">
+  <div class="container p-4 mt-3">
+    <div class="row py-4">
+      <div class="col-md-12">
+        <div class="head-line text-center">
+          <h4>تم إرسال رسالتك بنجاح</h4>
+          <p>الرجاء الأنتظار بعض الدقائق فقط</p>
+        </div>
+      </div>
+      <div class="col-md-12 mt-5 mb-5 text-center">
+        <div class="icon-out">
+          <i class="fa-solid fa-check"></i>
+        </div>
+      </div>
+      <div class="col-md-12 mt-5">
+        <div class="text-center">
+          <h6>الخروخ</h6>
+        </div>
+      </div>
+    </div>
+  </div>
+  <span (click)="backStep()" class="exit"
+    ><i class="fa-solid fa-arrow-right-long"></i>العوده</span
+  >
+  <i class="fa-solid fa-xmark"></i>
+</ng-container>
